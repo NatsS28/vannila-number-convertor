@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LCM Calculator</title>
+    <link rel="stylesheet" href="styleLcm.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+    <h1>Least Common Multiple calculator</h1>
+	<p>Least common multiple (LCM) calculator. LCM is also known as least common denominator (LCD).</p>
+	<h2 class="head">LCM calculator</h2>
+	 <form name="calcform" autocomplete="off">
+	<table class="calc2">
+		<tr>
+			<td>First number:</td>
+			<td class="math"><input type="number" step="any" name="a" class="intext" id="first" autofocus></td>
+		</tr>
+		<tr>
+			<td>Second number:</td>
+			<td class="math"><input type="number" step="any" name="b" class="intext" id="Second" ></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td><input type="button" value="Calculate" class="btn btn-primary" onclick="lcmcalc()"> <input type="reset" value="&#10007" class="btn btn-danger"></td>
+		</tr>
+		<tr>
+			<td>Least common multiple (lcm):</td>
+			<td class="math"><input type="text" name="lcm" class="outtext" id="firstO" readonly></td>
+		</tr>
+		<tr>
+			<td>Greatest common divisor (gcd):</td>
+			<td class="math"><input type="text" name="gcd" class="outtext" id="secondO"readonly></td>
+		</tr>
+	</table>
+    </form>
+    <script src="./lcm.js"></script>
+</body>
+</html>

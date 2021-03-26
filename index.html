@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1>Number Conversion</h1>
+    <h2>Number base converter</h2>
+    <p>Enter a number and press the <i>Convert</i> button:</p>
+    <form name="calcform" autocomplete="off">
+        <div class="container">
+            <table class="calc2">
+                <tbody>
+                    <span>
+                        <tr>
+                            <td><label for="bin" class="lab">Binary number:</label></td>
+                            <td class="math"><input type="text" inputmode="numeric" id="bin" name="bin" autofocus placeholder="Binary"></td>
+                            <td class="mathsymbol"><sub>2</sub></td>
+                            <td><input onclick="Convert_Bin()" type="button" value="Convert" class="btn btn-primary">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="oct" class="lab">Octal number:</label></td>
+                            <td class="math"><input type="text" inputmode="numeric" id="oct" name="oct" placeholder="Octal"></td>
+                            <td class="mathsymbol"><sub>8</sub></td>
+                            <td><input onclick="Convert_Oct()" type="button" value="Convert" class="btn btn-warning">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="dec" class="lab">Decimal number:</label></td>
+                            <td class="math"><input type="text" inputmode="numeric" id="dec" name="dec" placeholder="Decimal"></td>
+                            <td class="mathsymbol"><sub>10</sub></td>
+                            <td><input onclick="Convert_Dec()" type="button" value="Convert" class="btn btn-success">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="x" class="lab">Hex number:</label></td>
+                            <td class="math"><input type="text" inputmode="numeric" id="hex" name="hex"  placeholder="HexaDecimal"></td>
+                            <td class="mathsymbol"><sub>16</sub></td>
+                            <td><input onclick="Convert_Hex()" type="button" value="Convert" class="btn btn-dark">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td><input type="reset" value="Reset" class="btn btn-danger">
+                            </td>
+                    </span>
+                    <h2>Number converters</h2>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </form>
+    <h2 class="services">Our Services</h2>
+    <ul>
+        <li><a href="lcm-calculator.html">LCM-Gcd-calculator</a></li>
+    </ul>
+
+</body>
+<script src="./app.js"></script>
+
+</html>
